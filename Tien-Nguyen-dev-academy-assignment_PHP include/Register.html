@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Register</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  body {
+    color: #a3a3a3;
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  /* form's elements for reuse' */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    border: 1px solid #ecedee;
+    border-radius: 3px;
+    /* full-width */
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    height: 55px;
+  }
+  select {
+    color: #a3a3a3;
+  }
+  /* color fot placeholder */
+  ::placeholder {
+    color: #a3a3a3;
+    opacity: 1;
+  }
+  textarea {
+    padding-top: 20px;
+    font-family: Helvetica,sans-serif;
+  }
+  button {
+    background-color: #2d3032;
+    border: 1px solid #2d3032;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    padding: 18px 0 16px;
+    text-align: center;
+    transition: 0.3s background-color;
+  }
+  button:hover {
+    background-color: #606162;
+  }
+  .clearfix {
+    zoom: 1;
+  }
+  .clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+  }
+
+  /* Layout */
+  .help {
+    margin: 30px auto;
+    width: 990px;
+  }
+  .help h2 {
+    color: #030303;
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 11px;
+    text-align: center;
+  }
+  .help .lead-text {
+    line-height: 2;
+    margin-bottom: 58px;
+    text-align: center;
+  }
+  .help-form {
+    background-color: #f2f3f5;
+    border: 1px solid #ececed;
+    box-shadow: 0 10px 14px 0 #ddd;
+    padding: 40px 30px 10px;
+  }
+  .help-form p {
+    margin-bottom: 30px;
+  }
+  .help-form p :nth-child(2) {
+    float: right;
+  }
+  .half-size {
+    width: 450px;
+  }
+  .full-size {
+    width: 100%;
+  }
+  .help-form .submit-btn {
+    font-size: 16px;
+    margin-top: -7px;
+  }
+</style>
+</head>
+<body>
+  <section class="help">
+    <h2>Register for Nordic Farms</h2>
+    <p class="lead-text">To become a member.</p>
+    <form method="" action="">
+      <div class="help-form">
+        <p class="clearfix"><input type="text" name="first-name" placeholder="First Name" value="" class="half-size"> <input type="text" name="last-name" placeholder="Last Name" value="" class="half-size"></p>
+        <p class="clearfix"><input type="email" name="email" placeholder="Your Email" value="" class="half-size"> <input type="tel" name="phone" placeholder="Your Phone" value="" class="half-size"></p>
+        <p class="clearfix">
+          <select name="country" class="half-size">
+            <option>Select Country</option>
+            <option value="Finland">Finland</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Norway">Norway</option>
+          </select>
+          <select name="course" class="half-size">
+            <option>Select Role</option>
+            <option value="management">Management</option>
+            <option value="staff">Staff</option>
+            <option value="visitor">Visitor</option>
+          </select></p>
+        <p class="submit-btn"><button type="submit">Submit</button></p>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
